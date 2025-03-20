@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover world-class design solutions and cutting-edge products tailored to elevate your brand. Wiko Enterprise specializes in premium branding, digital assets, and creative innovation.">
+    <meta name="keywords" content="premium design, branding, digital solutions, high-end products, creative innovation">
+    <title>Wiko Enterprise | Excellence in Design & Innovation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Ubuntu', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-color: #343a40;
+        }
+        header nav ul li {
+            margin: 0 15px;
+        }
+        header nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 20px;
+            display: inline-block;
+        }
+        .section-title {
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: 700;
+            font-size: 2rem;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .text-box {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .product-card {
+            perspective: 1000px;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+        }
+        .product-card:hover {
+            transform: rotateY(10deg) scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .buy-button {
+            background: linear-gradient(45deg, #28a745, #218838);
+            color: white;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+        .buy-button:hover {
+            transform: scale(1.1);
+            background: linear-gradient(45deg, #218838, #1e7e34);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #343a40;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="ubuntu-bold">Home</a></li>
+                <li><a href="about.html" class="ubuntu-text">About</a></li>
+                <li><a href="products.html" class="ubuntu-text">Products</a></li>
+                <li><a href="contact.html" class="ubuntu-text">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About Section -->
+        <section id="about">
+            <h1 class="section-title">About Wiko Enterprise</h1>
+            <div class="text-box ubuntu-text" id="about-text">
+                <p>Welcome to <strong>Wiko Enterprise</strong>—where innovation meets excellence. We craft extraordinary visuals that resonate with audiences worldwide. Our commitment to precision, creativity, and forward-thinking design ensures that every project we undertake exceeds expectations.</p>
+            </div>
+        </section>
+
+        <!-- Products Section -->
+        <section id="products">
+            <h1 class="section-title">Our Exclusive Offerings</h1>
+            <div class="text-box ubuntu-text" id="products-text">
+                <p>Explore our high-end design solutions and branding assets tailored for businesses seeking premium aesthetics and market distinction.</p>
+                <div class="product-card">
+                    <img src="Bold Minimalist Logo Design.png" alt="Product Image" class="product-image" width="200">
+                    <h3>Bold Minimalist Logo Design</h3>
+                    <p>Clean, modern, and impactful logo design.</p>
+                    <div class="product-price">$99.99</div>
+                    <button class="buy-button" onclick="buyProduct()">Buy Now</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h1 class="section-title">Connect With Us</h1>
+            <div class="text-box ubuntu-text" id="contact-text">
+                <p>Partner with Wiko Enterprise and take your brand to the next level. Whether you're looking for a custom logo, rebranding strategy, or elite design services, we’re here to help.</p>
+                <p>Email: <a href="mailto:Alatise37@gmail.com">Alatise37@gmail.com</a></p>
+                <p>Phone: +234 (915) 850-0827</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="ubuntu-text">&copy; 2025 Wiko Enterprise. Redefining Excellence in Design & Branding.</p>
+    </footer>
+
+    <script>
+        function buyProduct() {
+            try {
+                alert("Redirecting to checkout...");
+                window.location.href = "checkout.html";
+            } catch (error) {
+                console.error("An error occurred: ", error);
+                alert("Something went wrong. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>
